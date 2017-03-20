@@ -35,10 +35,11 @@ public class work {
 	public static ArrayList<String> addWordnum(ArrayList<String> list, ArrayList<String> text){
 		ArrayList num = new ArrayList();
 		int cnt=0;
-		System.out.println(text.size());
+//		System.out.println(text.size());
 		while (cnt<text.size()){
 			String wordNumStr="T"+Integer.toString(cnt)+" ";
 			String nowText=(String)text.get(cnt);
+			
 	        for (int i=0;i<list.size();i++){
 	        	String tmp=(String)list.get(i);
 	        	int flag=nowText.indexOf(tmp);
