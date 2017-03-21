@@ -47,7 +47,7 @@ public class work {
 	        		wordNumStr+=(Integer.toString(i)+" ");
 	        	}
 	        }
-	    	num.add(wordNumStr);
+	    	num.add(wordNumStr);  					//wordNumStr类型是String ;   num类型是ArrayList<String>
 	        cnt++;
 		}
 		return num;
@@ -63,11 +63,23 @@ public class work {
 //        total_text.add("1 2 3 4 5 6 77 8 2 1 5 8 4 ");
 //        total_text.add("2 5 1 2 4 8 4 6 77 8 4 6");
 //        System.out.println(total_text.size());
-        list = addDatalist();
+        list = addDatalist();        //
         JdbcConnect conn = new JdbcConnect();
         total_text = conn.getSummary("select summary from t_record limit 1,2", "summary");
         word_num = addWordnum(list,total_text);
-        System.out.println(word_num);
+    
+        	// <String>  test[]=word_num.toArray();
+        	 String test[] = new String[word_num.size()];
+        	 test = word_num.toArray(test);
+        	 
+        	 for(String temp:test){
+        		 System.out.println(temp);
+        	 }
+        	    
+        	    
+        
+        
+        System.out.println(word_num);			//      word_num类型  ArrayList<String>
         
 
         

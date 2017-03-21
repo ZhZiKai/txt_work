@@ -94,7 +94,7 @@ public class JdbcConnect {
 	}
 	public static void main(String[] args) throws SQLException {
 		JdbcConnect jdbcConnect=new JdbcConnect();
-		ArrayList<String> result=jdbcConnect.getSummary("select summary from t_record limit 1,1", "summary");
+		ArrayList<String> result=jdbcConnect.getSummary("select summary from t_record limit 1,2", "summary");
 		System.out.println(result);
     }
 }
