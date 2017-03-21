@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 
-public class JdbcConnect {
+public class JdbcConnect { 
 
 	public static final  String  url = "jdbc:mysql://localhost:3306/soft";
 	public static final  String driver = "com.mysql.jdbc.Driver";

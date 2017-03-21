@@ -47,7 +47,7 @@ public class work {
 	        		wordNumStr+=(Integer.toString(i)+" ");
 	        	}
 	        }
-	    	num.add(wordNumStr);  					//wordNumStr类型是String ;   num类型是ArrayList<String>
+	    	num.add(wordNumStr);  			   		//wordNumStr类型是String ;   num类型是ArrayList<String>
 	        cnt++;
 		}
 		return num;
